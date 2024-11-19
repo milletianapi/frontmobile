@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .all-\[unset\] {
+        all: unset;
+    }
+}
+
+@font-face {
+    font-family: 'MabinogiClassic';
+    src: url('./assets/fonts/Mabinogi_Classic_TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mabinogi\_Classic-Regular';
+    src: url('./assets/fonts/Mabinogi_Classic_TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font: 400 10px/11px 'MabinogiClassic', sans-serif;
+}
+
+.mabi {
+    @apply border border-solid border-[#9F7394] rounded-[5px];
+}
+
+.mid {
+    @apply flex justify-center items-center pt-0.5;
+}
+
+.rgb-box {
+    @apply rounded-0.75 border border-[#d5b8e6];
+}
+
+.color-input::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color-input::-webkit-color-swatch {
+    border: none;
+}
+
+.text-shadow-white {
+    text-shadow:
+            -1px -1px 0 #ffffff,
+            1px -1px 0 #ffffff,
+            -1px  1px 0 #ffffff,
+            1px  1px 0 #ffffff;
+}
